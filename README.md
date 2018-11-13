@@ -42,7 +42,7 @@ while 不满足终止条件
 
 <img src="http://chart.gooleapis.com/chart?cht=tx&chl=\Large Q = \sum\limits_{v=1}^k[\frac{l_v}{M}-(\frac{d_v}{2M})^2]" style="border:none;">
 
-<img src="http://www.forkosh.com/mathtex.cgi?\Large x = {-b\pm\sqrt{b^2-4ac}}{2a}">
+<img src="http://www.forkosh.com/mathtex.cgi?\Large x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}">
 
 <img src="http://www.forkosh.com/mathtex.cgi?\Large Q = \sum\limits_{v=1}^k[\frac{l_v}{M}-(\frac{d_v}{2M})^2]">
 
