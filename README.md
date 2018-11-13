@@ -38,6 +38,21 @@ while 不满足终止条件
 
 `Q = sum(lv/Mv - dv*dv/2Mv*2Mv);(v from 1 to k)`
 
+<img src="http://chart.gooleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
+
+<img src="http://chart.gooleapis.com/chart?cht=tx&chl=\Large Q = \sum\limits_{v=1}^k[\frac{l_v}{M}-(\frac{d_v}{2M})^2]" style="border:none;">
+
+<img src="http://www.forkosh.com/mathtex.cgi?\Large x = {-b\pm\sqrt{b^2-4ac}}{2a}">
+
+<img src="http://www.forkosh.com/mathtex.cgi?\Large Q = \sum\limits_{v=1}^k[\frac{l_v}{M}-(\frac{d_v}{2M})^2]">
+
+<script type = "text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+
+$$Q=\sum\limits_{v=1}^k[\frac{l_v}{M}-(\frac{d_v}{2M})^2]$$
+
 其中，lv是社团v内部所包含的边数，dv是社团v中所有节点的度值之和,Mv是网络的边数。
 
 ## 4.相似度指标
