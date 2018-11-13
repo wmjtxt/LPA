@@ -46,7 +46,7 @@ int main(int argc, char **argv){
 		lpa.labeled();
 		lpa.display();
 		maxn--;
-	}while(modu - lpa.modularity() < 0.5 && maxn > 0);//需要保存上一次迭代的结果
+	}while(modu - lpa.modularity() < 0.1 && maxn > 0);//需要保存上一次迭代的结果
 
 	//打印最后结果
 	lpa.displayResult();
