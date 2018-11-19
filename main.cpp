@@ -32,7 +32,7 @@ int main(int argc, char **argv){
 
 	//sleep(3);
 	LPA lpa(filename);
-	int maxn = 10000;//最大迭代次数
+	int maxn = 10;//最大迭代次数
 	double modu = lpa.modularity();
 	double maxQ = modu;
 	cout << "初始模块度 = " << modu << endl;
@@ -45,12 +45,13 @@ int main(int argc, char **argv){
 			lpa.getmaxComms();
 		}
 		maxn--;
-		cout << "迭代次数：" << 10000-maxn << endl;
+		cout << "迭代次数：" << 10-maxn << endl;
 	}while(modu - lpa.modularity() < 0.1 && maxn > 0);//需要保存上一次迭代的结果
 
 	//打印最后结果
 	lpa.displayResult();
-	cout << "迭代次数：" << 10000-maxn << endl;
+	lpa.displayLabels();
+	cout << "迭代次数：" << 10-maxn << endl;
 
 	display_time("end");
 
