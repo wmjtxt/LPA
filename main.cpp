@@ -39,6 +39,7 @@ int main(int argc, char **argv){
 	do {
 		lpa.labeled();
 		lpa.display();
+		lpa.displayLabels();
 		modu = lpa.modularity();
 		if(maxQ < modu){
 			maxQ = modu;
