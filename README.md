@@ -1,5 +1,20 @@
 LPA of CPlusPlus
 ====
+
+
+# 执行方法
+
+```
+$ make
+$ ./lpa sample_networks/test.txt
+```
+
+* 文件夹`sample_networks`里是几个经典网络以及我自己的几个test
+* 可以根据需要修改main函数
+
+
+
+# Document
 destination : improve LPA
 
 ## 1.算法描述

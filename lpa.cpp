@@ -17,12 +17,12 @@ LPA::LPA(string filename){
 	in.resize(size+1);
 	tot.resize(size+1);
 	comms.resize(size);
-	for(int i = 0; i < size; i++)
+	for(unsigned i = 0; i < size; i++)
 		comms[i] = i;
 }
 
 void LPA::labeled(){
-	for(unsigned int i = 0; i < size; i++){
+	for(unsigned i = 0; i < size; i++){
 		vector<int> cnt(size,0);
 		vector<int> maxv;
 		int maxnum = 0, maxcnt = 0;
@@ -48,7 +48,7 @@ void LPA::labeled(){
 		}
 	}
 	set<int> difflabel;
-	for(int i = 0; i < size; i++){
+	for(unsigned i = 0; i < size; i++){
 		difflabel.insert(g.label[i]);
 	}
 	commnum = difflabel.size();
@@ -78,12 +78,12 @@ void LPA::displayResult(){
 
 void LPA::displayLabels(){
 	cout << "社团个数 : " << commnum << " = { ";
-	for(int i = 0; i < commnum; i++){
+	for(unsigned i = 0; i < commnum; i++){
 		if(i != 0) cout << ",";
 		cout << "[" << comms[i] << "]";
 	}
 	cout << " }\n";
-	for(int i = 0; i < size; i++){
+	for(unsigned i = 0; i < size; i++){
 		if(i != 0) cout << ",";
 		cout << "[" << g.label[i] << "]";
 	}
@@ -92,7 +92,7 @@ void LPA::displayLabels(){
 double LPA::modularity(){
 	double q = 0;
 	double m2 = (double)(2*g.nb_links);
-	for(int i = 0; i < commnum; i++){
+	for(unsigned i = 0; i < commnum; i++){
 		//in[i]是社团i内部的边数 
 		//cout << "in" << endl;
 		in[i] = g.nb_selfloops(comms[i]);
@@ -107,11 +107,11 @@ double LPA::modularity(){
 
 void LPA::getmaxComms(){
 	maxComms.resize(comms.size());
-	for(int i = 0; i < commnum; i++){
+	for(unsigned i = 0; i < commnum; i++){
 		maxComms[i] = comms[i];
 	}
 	maxLabel.resize(g.label.size());
-	for(int i = 0; i < g.label.size(); i++){
+	for(unsigned i = 0; i < g.label.size(); i++){
 		maxLabel[i] = g.label[i];
 	}
 	maxQ = modularity();

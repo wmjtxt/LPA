@@ -50,7 +50,7 @@ inline int Graph::nb_selfloops(int comm){
 		}
 	}
 	for(auto & item : commi){
-		for(int j = 0; j < links[item].size(); j++){
+		for(unsigned j = 0; j < links[item].size(); j++){
 			if(commi.find(links[item][j]) != commi.end()){
 				res++;
 			}

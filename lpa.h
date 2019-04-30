@@ -25,8 +25,8 @@ using namespace std;
 class LPA{
 public:
 	Graph g;
-	int size;
-	int commnum;
+	unsigned size;
+	unsigned commnum;
 	// used to compute the modularity
 	vector<int> in,tot;
 	//存放社团
