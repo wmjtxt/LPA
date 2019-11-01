@@ -1,12 +1,8 @@
-LPA of CPlusPlus
+LPA算法C++实现
 ====
 
 
-# 目录结构
-
-* src
-
-# 执行方法
+## 0.运行方法
 
 ```
 $ make
@@ -16,10 +12,6 @@ $ ./lpa sample_networks/test.txt
 * 文件夹`sample_networks`里是几个经典网络以及我自己的几个test
 * 可以根据需要修改main函数
 
-
-
-# Document
-destination : improve LPA
 
 ## 1.算法描述
 
@@ -66,4 +58,3 @@ while 不满足终止条件
 
 ## 5.改进思路
 	* 聚类系数与完全子图
-
