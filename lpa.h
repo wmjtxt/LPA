@@ -28,11 +28,12 @@ public:
 	unsigned size;
 	unsigned commnum;
 	// used to compute the modularity
-	vector<int> in,tot;
-	//存放社团
+	vector<int> in, tot;
+    //max
 	vector<int> maxComms;
 	vector<int> maxLabel;
 	double maxQ;
+	//存放社团
 	vector<int> comms;
 	LPA(string);
 	void labeled();

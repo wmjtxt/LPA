@@ -23,6 +23,7 @@ LPA::LPA(string filename){
 
 void LPA::labeled(){
 	for(unsigned i = 0; i < size; i++){
+        //cout << "g.links[i].size() = " << g.links[i].size() << endl;
 		vector<int> cnt(size,0);
 		vector<int> maxv;
 		int maxnum = 0, maxcnt = 0;

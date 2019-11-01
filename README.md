@@ -2,6 +2,10 @@ LPA of CPlusPlus
 ====
 
 
+# 目录结构
+
+* src
+
 # 执行方法
 
 ```
